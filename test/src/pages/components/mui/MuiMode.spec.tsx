@@ -1,5 +1,7 @@
 import { render, screen } from '../../../test-utils';
 import MuiMode from '../../../../../src/components/mui/MuiMode';
+
+// remove import it is only nessessary for Version 01
 //import { AppProviders } from '../../../../../src/providers/AppProvider';
 
 /**
@@ -23,7 +25,9 @@ describe('MuiMode ', () => {
   });
 });
 
+
 */
+// #########################################################################
 
 /**
  *
@@ -32,9 +36,6 @@ describe('MuiMode ', () => {
 
 describe('MuiMode ', () => {
   it('renders text correctly ', () => {
-    // render(<MuiMode />, {
-    //   wrapper: AppProviders,
-    // });
     render(<MuiMode />);
     const headingElement = screen.getByRole('heading');
     expect(headingElement).toHaveTextContent('dark mode');
