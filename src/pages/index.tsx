@@ -3,6 +3,7 @@ import Head from 'next/head';
 import { Inter } from 'next/font/google';
 
 import { Application } from '@/components/application/Application';
+import MuiMode from '@/components/mui/MuiMode';
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
       </Head>
       <main className=''>
         <Application />
+        <MuiMode />
       </main>
     </>
   );
