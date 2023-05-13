@@ -6,7 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
+    "lint": "next lint --ignore-path .gitignore",
     "test": "jest",
     "test:ci": "jest --coverage --silent --ci",
     "coverage": "jest --coverage --silent --ci --watchAll --collectCoverageFrom='test/src/**/*.{types,stories,constants,test,sec}.{ts,tsx}'"
@@ -33,7 +33,10 @@
     "@types/node": "^20.1.3",
     "@types/react": "^18.2.6",
     "@types/react-dom": "^18.2.4",
+    "eslint-plugin-jest-dom": "^4.0.3",
     "jest-environment-jsdom": "^29.5.0",
+    "msw": "^1.2.1",
+    "prettier": "^2.8.8",
     "ts-jest": "^29.1.0"
   }
 }
