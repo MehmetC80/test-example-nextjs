@@ -8,7 +8,8 @@
     "start": "next start",
     "lint": "next lint",
     "test": "jest",
-    "test:ci": "jest --coverage --silent --ci"
+    "test:ci": "jest --coverage --silent --ci",
+    "coverage": "jest --coverage --silent --ci --watchAll --collectCoverageFrom='test/src/**/*.{types,stories,constants,test,sec}.{ts,tsx}'"
   },
   "dependencies": {
     "eslint": "8.40.0",
