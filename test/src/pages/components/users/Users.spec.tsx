@@ -13,7 +13,7 @@ describe('Users', () => {
   it('renders a list of users', async () => {
     render(<Users />);
     const users = await screen.findAllByRole('listitem');
-    expect(users).toHaveLength(3);
+    expect(users).toHaveLength(10);
   });
 
   it('renders error', async () => {
